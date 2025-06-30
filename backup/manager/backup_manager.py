@@ -47,5 +47,5 @@ def list_backups_and_return():
         for i, (name, server_id) in enumerate(backups):
             print(f"[{Fore.GREEN}>{Fore.RESET}] {i + 1}. {name} (ID: {server_id})")
     input(f"\n[{Fore.GREEN}>{Fore.RESET}] 🔁 Press enter to return to the main menu...")
-    from clone_tool import start_bot
+    from main.clone_tool import start_bot
     start_bot()

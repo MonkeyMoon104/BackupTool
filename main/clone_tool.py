@@ -6,12 +6,11 @@ import os
 from colorama import init, Fore
 from discord.ext import commands
 import discord
-
 from license.manager.license_manager import validate_license
 from ui.ui import choose_action_before_start, show_title, clear
 from backup.manager.backup_manager import check_backup_folder, list_backups_and_return
 from backup.func.import_export import import_backup, create_clonation, shutdown_bot
-from ratelimiter import safe_create
+from ratelimit.ratelimiter import safe_create
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 

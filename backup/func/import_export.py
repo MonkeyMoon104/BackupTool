@@ -2,7 +2,7 @@ import json
 import logging
 import asyncio
 from colorama import Fore
-from ratelimiter import safe_create
+from ratelimit.ratelimiter import safe_create
 import discord
 
 export_data = {}
